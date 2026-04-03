@@ -4,25 +4,25 @@
 
 %Custom commands
 \newcommand{\resumesection}[1]{
-	\vspace*{-0.5\baselineskip}
-	\begin{flushleft}
-		\large{\textbf{\uppercase{#1}}}
-	\end{flushleft}
+    \vspace*{-0.5\baselineskip}
+    \begin{flushleft}
+        \large{\textbf{\uppercase{#1}}}
+    \end{flushleft}
 } %{title}
 \newcommand{\experiencesubsection}[3]{
-	\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} p{7cm} l r}
-		\textbf{#1} & \textbf{#2} & \textbf{#3}
-	\end{tabular*}
+    \begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} p{7cm} l r}
+        \textbf{#1} & \textbf{#2} & \textbf{#3}
+    \end{tabular*}
 } %{Company}{Title}{Duration}
 \newcommand{\educationsubsection}[4]{
-	\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} l r}
-		#1 & #2 \\
-		\textbf{#3} & #4\\
-	\end{tabular*}
+    \begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} l r}
+        #1 & #2 \\
+        \textbf{#3} & #4\\
+    \end{tabular*}
 } %{Degree}{Duration}{University/College}{GPA}
 \newcommand{\horizontalrule}[1]{\noindent{\rule{\textwidth}{#1}}} %{lineWeight}
 \newcommand{\techitem}[1]{\item Technology: \textbf{#1}} %{Tools}
-\newcommand{\project}[3]{\item \textbf{#1}#2 \textbf{(#3)}} %{Title}{Description}{Tools}
+\newcommand{\project}[4]{\item \textbf{#1} \textit{| Stack: #4} \\ \smallskip \textit{#2} \vspace{2pt} #3}
 \newcommand{\customitemizespacing}{\addtolength{\itemsep}{-0.5\baselineskip}}
 
 \begin{document}
@@ -32,10 +32,10 @@
 %Header
 \center
 {
-	\begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} l r}
-		{\textbf{\begin{LARGE}Faiq Ghozy Erlangga\end{LARGE}}} & ghozyerlanggafaiq@gmail.com\\
-		github.com/faiq1818 & (+62)82269144739
-	\end{tabular*}
+    \begin{tabular*}{1.0\textwidth}{@{\extracolsep{\fill}} l r}
+        {\textbf{\begin{LARGE}Faiq Ghozy Erlangga\end{LARGE}}} & ghozyerlanggafaiq@gmail.com\\
+        github.com/faiq1818 $\vert$ linkedin.com/in/faiq1818 & (+62)82269144739
+    \end{tabular*}
 }
 
 \horizontalrule{0.4pt}
@@ -45,65 +45,43 @@
 \resumesection{Technical Skills}
 \begin{itemize}
 %\customitemizespacing
-	\item \textbf{Languages:} JavaScript, TypeScript, Go, Python
-	\item \textbf{Frameworks:} React, React Native, Express.js, Next.js
-	\item \textbf{Backend:} REST API, Go stdlib
-	\item \textbf{Infrastructure \& Deployment:} Docker (basic), VPS, Linux server, Nginx (basic)
+    \item \textbf{Languages:} TypeScript, Go
+    \item \textbf{Frameworks:} React, React Native, Next.js, Express.js
+    \item \textbf{Database \& Storage:} PostgreSQL, Supabase S3 Compatible Object Storage
+    \item \textbf{Infrastructure:} Docker, VPS, Nginx, Supabase, Linux, NixOS
 \end{itemize}
 
 
 %Education
 \resumesection{Education}
-% \educationsubsection{M.S. Computer Science}{2011 - 2012}{Georgia Institute of Technology(Georgia Tech)}{}
-% \newline
-\educationsubsection{B.E. Informatics Engineering}{2023 - Present}{Sumatera Institute of Technology}{}
-
-
-%Experience
-% \resumesection{Experience}
-%
-% \experiencesubsection{Microsoft}{SDE II}{May 2016 - Present}
-% \begin{itemize}
-%\customitemizespacing
-	% \project{}{Worked on a \href{https://techcrunch.com/2017/09/26/microsoft-excel-is-about-to-get-a-lot-smarter/}{project} to create an interface(Cards) for newly supported entity values in Excel on all endpoints (Win32, UWP, Android, iOS and Web). Part of the core team responsible for architectural design of the feature. Built initial prototypes for evaluation. One of the key contributors in multiple aspects of the initial implementation.}{Java, C++, C\#}
-	% \project{}{Implemented React Native based componentized UI for cards on Android, iOS and Win32 endpoints. This reduced development efforts for the team as more code could be shared across all three platforms.}{JavaScript/TypeScript, React Native}
-	% \project{}{Worked on leveraging \href{http://adaptivecards.io/}{Microsoft Adaptive Cards} to support multiple layouts in cards with ease. Developed a JSON data binding solution to complement adaptive cards schema. With this work a third-party content provider can author their own card layouts without any additional code.}{TypeScript}
-	% \project{}{Currently working on a feature that will allow us to push updates to the cards feature faster. The details are not yet public.}{C++}
-	% \techitem{Java, TypeScript, C++, React Native}
-% \end{itemize}
-%
-% \experiencesubsection{Oracle America Inc.}{Senior Software Engineer}{Mar 2013 - May 2016}
-% \begin{itemize}
-%\customitemizespacing
-	% \project{} {Worked in a team of 4 to support third party ADF applications in existing framework. The work involved developing a container to host ADF applications, allowing embedding appropriate content in authorized iframes, establishing secure communication link between different domains, managing sessions, supporting single sign on and overall providing a seamless experience for the end user.}{Java, JavaScript}
-	% \project{} {Worked independently on a couple of features for the web client. Implemented a feature to provide freestyle drawing support and save it as a picture. Upgraded a dated HTML text editor to CKEditor with backward compatibility with textual data created with older editors.}{Java, JavaScript}
-	% \project{} {Implemented a PDF viewer and handwriting support for signatures, native playback support for video files, touch-friendly navigation menu(later included in web client as well) for iPad application. Responsible for supporting all new features being developed on iPad Safari and the app and for uptaking latest iOS SDKs.}{Java, Objective-C}
-	% \techitem{Java, JavaScript(HTML/CSS), Objective-C}
-% \end{itemize}
-%
-% \experiencesubsection{Epic Systems}{Software Developer Intern}{May 2012 - Aug 2012}
-% \begin{itemize}
-%\customitemizespacing
-	% \project{}{Designed and developed an intuitive direct manipulation based interface to help hospital staff assess Emergency Department status quickly and take appropriate actions right away.}{C\#}
-	% \project{}{Involved providing touch and vector graphics support to facilitate installations on big touch screens at triage stations and very intuitive interface so that the staff can start utilizing the tool with minimal training.}
-	% \techitem{C\#}
-% \end{itemize}
-%
-% \experiencesubsection{Intel India Pvt. Ltd.}{Software Developer Intern}{Jan 2011 - Jun 2011}
-% \begin{itemize}
-%\customitemizespacing
-	% \project{}{Worked on a couple of projects to improve the team's effectiveness like an improved logging tool and a componentized framework for easy UI adaptation.}{C\#}
-	% \project{}{Developed a logging based debugging library to let developers easily create logs and figure out root cause of the issue at hand.}
-	% \project{}{Developed a GUI framework of team's existing UI to make it easily reusable and adaptable by other teams.}
-	% \project{}{Both projects helped improve team's efficiency by removing unnecessary and time-consuming tasks from developers' work.}
-	% \techitem{C\#}
-% \end{itemize}
-
+\educationsubsection{B.E. Informatics Engineering}{2023 - Present}{Sumatera Institute of Technology}{GPA: 3.63 / 4.00}
 
 %Projects
 \resumesection{Projects}
 \begin{itemize}
-	\project{Margodadiku: }{Android attendance application using GPS-based location verification}{TypeScript, React Native, Deno, PostgreSQL}
-	% \project{Web proxy, server and client communication: }{Programmed web proxy, server and client with socket communication, shared memory communication and functionality of Remote Procedure Calls (RPC) for encryption/decryption inclusive of support for internet browser communication.}{(C)}
+    \project{\href{https://github.com/faiq1818/margodadiku}{Margodadiku (GitHub Repository)}}
+		{A mobile attendance app for village officials with GPS-based location verification.}
+		{
+			\begin{itemize}
+				\customitemizespacing
+				\item Implemented precise location verification using the Expo GPS API.
+				\item Architected a \textit{serverless} backend using Deno HTTP Server to execute low-latency operations via Supabase Edge Functions.
+				\item Utilized the Haversine formula to calculate and validate the user's distance against a predefined geographical center.
+			\end{itemize}
+		}
+		{TypeScript, React Native, Deno, PostgreSQL}
+
+    \project{\href{https://github.com/faiq1818/web-desa-pemerihan}{Web Desa Pemerihan (GitHub Repository)}}
+		{A full-stack administrative portal for a rural village, digitizing local services and public information.}
+		{
+			\begin{itemize}
+				\customitemizespacing
+				\item Developed a rural administrative portal using React and Next.js, leveraging \textit{Server-Side Rendering} (SSR) for optimal SEO performance.
+				\item Integrated PostgreSQL and Supabase S3 Compatible Object Storage to manage relational data and static media, including article assets, local product catalogs, and tourism imagery.
+				\item Streamlined local bureaucratic workflows through a web-based digital service connected directly to the PostgreSQL database.
+			\end{itemize}
+		}
+		{TypeScript, React, Next.js, Supabase S3, PostgreSQL}
 \end{itemize}
+
 \end{document}
